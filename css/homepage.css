@@ -5,6 +5,11 @@
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.container{
+    width: 64%;
+    margin: auto;
+}
+
 
 
 /* Header Style */
@@ -13,12 +18,15 @@
     height: auto;
 }
 
-.header .header-top{
+.header .header-top {
     background-color: #555555;
+}
+
+.header .header-top .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 18%;
+    padding: 4px 0;
     font-weight: 100;
     font-size: 14px;
 }
@@ -59,6 +67,7 @@
     align-items: center;
     gap: 6px;
 }
+
 .header .header-top .header-select p i{
     font-size: 9px;
 }
@@ -66,6 +75,7 @@
 .header .header-top .header-select:hover{
     background-color: #6F6F6F;
 }
+
 .header .header-top .header-select:hover ul{
     display: block;
 }
@@ -77,24 +87,31 @@
     width: 95px;
     display: none;
 }
+
 .header .header-top .header-select ul li{
     width: 100%;
     padding: 8px;
 }
+
 .header .header-top .header-select ul li a{
     color: #fff;
     text-decoration: none;
 }
+
 .header .header-top .header-select ul li:hover{
     background-color: #aaa;
 }
+
 .header .header-top .header-select ul li:hover a{
     color: #333;
 }
 
+/* --- */
 .header .header-bottom{
-    padding: 0 18%;
     background-color: #f8cb1c;
+}
+
+.header .header-bottom .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,3 +193,153 @@
     background-color: #f9f3d9;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+/*  */
+.header .header-category{
+    background-color: #f9d54b;
+}
+
+.header .header-category .container{
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.header .header-category ul li{
+    width: 31%;
+    display: flex;
+    align-items: center;
+}
+.header .header-category ul li span{
+    margin-right: 5px;
+    color: #787053;
+    width: 40px;
+    text-align: end;
+}
+
+.header .header-category ul li a{
+    color: #555;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    gap: 20px;
+    transition: all 0.15s ease-in-out;
+    padding: 6px 10px;
+}
+
+.header .header-category ul li a:hover{
+    background-color: #f7e189;
+    color: #333;
+    text-decoration: none;
+}
+
+/*  */
+.header .header-search{
+    background-color: #f8cb1c;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.header .header-search:hover{
+    background-color: #f9d54b;
+}
+
+.header .header-search .container{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    caret-color: transparent; 
+    user-select: none; 
+}
+
+.header .header-search .container i{
+    font-size: 12px;
+}
+
+.header .header-search .container p{
+    color: #787053;
+    border-bottom: 1px dashed #787053;
+}
+
+/*  */
+.header .hd-search-menu{
+    background-color: #f8cb1c;
+    padding: 20px 0;
+    display: none;
+}
+
+.search-active{
+    display: block !important;
+}
+
+.header .hd-search-menu .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header .hd-search-menu .container .search-selects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.header .hd-search-menu .container .search-selects .slcs{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header .hd-search-menu .container .search-selects .slcs label{
+    color: rgb(85, 85, 85);
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header .hd-search-menu .container .search-selects .slcs select, input{
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #8a8a8a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #555;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.header .hd-search-menu .container .search-selects .slcs select:focus,
+.header .hd-search-menu .container .search-selects .slcs input:focus{
+    background-color: #f9f3d9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header .hd-search-menu .container button{
+    font-family: "PT Sans Narrow", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    margin: auto;
+    width: 90px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #555555;
+    transition: all 0.15s ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.header .hd-search-menu .container button:hover{
+    background-color: #f9f3d9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
