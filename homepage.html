@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://boss.azstatic.com/assets/favicons/favicon-192x192-ef7b1305e801dc655956c2416210c829932ae25ac772dc5c5fb67b36ee0f10e0.png" rel="icon" sizes="192x192">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/homepage.css">
     <title>Boss.Az - Azərbaycanda İş</title>
 </head>
 
 <body>
-    
+
     <header class="header">
         <section class="header-top">
             <nav class="header-top-nav">
@@ -21,14 +23,39 @@
                 <a href="#" style="font-weight: 700;">Saytda reklam</a>
             </nav>
 
-            <select class="header-select">
-                <option selected hidden><a href="./homepage.html">boss.az</a></option>
-                <option><a href="https://bina.az/">bina.az</a></option>
-                <option><a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">tap.az</a></option>
-                <option><a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">turbo.az</a></option>
-            </select>
+            <div class="header-select">
+                <p>boss.az <i class="fa-solid fa-caret-down"></i></p>
+                <ul>
+                    <li>
+                        <a href="https://bina.az/">bina.az </a>
+                    </li>
+                    <li>
+                        <a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">tap.az</a>
+                    </li>
+                    <li>
+                        <a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">turbo.az</a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
+        <section class="header-bottom">
+            <a class="logo" href="./homepage.html">boss.az</a>
+            <div class="hb-nav">
+                <nav>
+                    <ul>
+                        <li><a href="./homepage.html" class="hb-active">İş elanları</a></li>
+                        <li><a href="#">İş axtaranlar</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">Haqqımızda</a></li>
+                    </ul>
+                    <button>Elan yerləşdirin</button>
+                </nav>
+            </div>
+        </section>
 
     </header>
 
@@ -45,4 +72,5 @@
 
     <script src="./js/page.js"></script>
 </body>
+
 </html>
