@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://boss.azstatic.com/assets/favicons/favicon-192x192-ef7b1305e801dc655956c2416210c829932ae25ac772dc5c5fb67b36ee0f10e0.png"
-        rel="icon" sizes="192x192">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://boss.azstatic.com/assets/favicons/favicon-192x192-ef7b1305e801dc655956c2416210c829932ae25ac772dc5c5fb67b36ee0f10e0.png" rel="icon" sizes="192x192">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/homepage.css">
     <title>Boss.Az - Azərbaycanda İş</title>
 </head>
 
 <body>
 
+    <!-- Header Section Start -->
     <header class="header">
         <section class="header-top">
             <div class="container">
@@ -49,15 +46,25 @@
 
         <section class="header-bottom">
             <div class="container">
-                <a class="logo" href="./homepage.html">boss.az</a>
+                <a class="logo" href="./homepage.html">
+                    boss.az 
+                    <div class="lang-buttons">
+                        <button class="lng-btn">
+                            RU
+                        </button>
+                         <button class="lng-btn">
+                            EN
+                        </button>
+                    </div>
+                </a>
                 <div class="hb-nav">
-                    <nav>
+                    <nav class="nav1">
                         <ul>
                             <li><a href="./homepage.html" class="hb-active">İş elanları</a></li>
                             <li><a href="#">İş axtaranlar</a></li>
                         </ul>
                     </nav>
-                    <nav>
+                    <nav class="nav2">
                         <ul>
                             <li><a href="#">Haqqımızda</a></li>
                         </ul>
@@ -141,18 +148,122 @@
                         </select>
                     </div>
                     <div class="slcs">
-                        <label for="search">Kategoriya</label>
-                        <input name="search" id="search" />
+                        <label for="search">Açar sözləri</label>
+                        <input name="search" type="text" id="search" />
                     </div>
                 </div>
                 <button>Axtar</button>
             </div>
         </section>
+
+        <section class="header-category-mobile">
+            <div class="container">
+                <div class="cat-mbl-btn" id="cat-mbl-btn">
+                    Bütün kateqoriyalar
+                     <i class="fa-solid fa-caret-down" id="cat-dropdown" itemid="cat-dropdown"></i>
+                </div>
+                <div class="cat-mbl" id="cat-mbl">
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Qarabağda iş imkanları</h3>
+                            <p>Mailiyyə, inzibati heyat, satış və Təhsil</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Marketinq</h3>
+                            <p>Reklam, sosial media və markalaşma</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Maliyyə</h3>
+                            <p>Bank, investisiya və büdcə idarəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>İnformasiya texnologiyaları</h3>
+                            <p>Proqramlaşdırma, IT dəstək və sistem idarəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>İnzibati heyət</h3>
+                            <p>Ofis idarəsi və təşkilati işlər</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Satış</h3>
+                            <p>Məhsul və xidmət satışı, müştəri əlaqəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Dizayn</h3>
+                            <p>Qrafik, UX/UI və vizual kommunikasiya</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Hüquqşünaslıq</h3>
+                            <p>Hüquqi məsləhət və sənəd hazırlığı</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Təhsil və elm</h3>
+                            <p>Müəllimlik, tədqiqat və akademik işlər</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Kənd təsərrüfatı</h3>
+                            <p>Fermerlik, bitkiçilik və heyvandarlıq</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Xidmət Personalı</h3>
+                            <p>Qonaqpərvərlik və müştəri xidməti</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Tibb və əczaçılıq</h3>
+                            <p>Həkim, əczaçı və tibbi dəstək</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Müxtəlif</h3>
+                            <p>Fərqli sahələr və ixtisaslar</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
     </header>
+    <!-- Header Section End -->
 
 
 
+
+    <!-- JS Connections -->
     <script src="./js/page.js"></script>
 </body>
-
 </html>
