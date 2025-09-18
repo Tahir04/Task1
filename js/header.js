@@ -1,4 +1,4 @@
-// Serach Menu
+// Search Menu
 let searchMenu = document.getElementById("hd-search-menu");
 let searchDropdown = document.getElementById("search-dropdown");
 let srcMenuOpenButton = document.getElementById("src-menu-open-btn");
@@ -18,8 +18,8 @@ srcMenuOpenButton.addEventListener('click', function(){
 
 // --------------------------------------------------------------
 
-// Mobile Category
 
+// Mobile Category
 let categoryMobil = document.getElementById("cat-mbl");
 let categoryDropdown = document.getElementById("cat-dropdown");
 let catMblButton = document.getElementById("cat-mbl-btn");
