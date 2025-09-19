@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h2 class="result-card-title">${job.title}</h2>
                     <p class="result-card-company">${job.company}</p>
                     <div class="result-card-btns">
-                        <div class="result-card-salary">${job.salary}</div>
+                        <div class="result-card-salary">${job.salary} AZN</div>
                         <div class="result-card-info">Ətraflı</div>
                     </div>
                     <p class="result-card-description">${job.description}</p>
