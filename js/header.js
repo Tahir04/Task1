@@ -25,7 +25,7 @@ let categoryDropdown = document.getElementById("cat-dropdown");
 let catMblButton = document.getElementById("cat-mbl-btn");
 
 catMblButton.addEventListener('click', function(){
-    categoryMobil.classList.toggle("search-active");
+    categoryMobil.classList.toggle("cat-mbl-active");
 
     if(categoryDropdown.classList.contains("fa-caret-down")){
         categoryDropdown.classList.remove("fa-caret-down");
@@ -33,5 +33,22 @@ catMblButton.addEventListener('click', function(){
     } else{
         categoryDropdown.classList.remove("fa-caret-up");
         categoryDropdown.classList.add("fa-caret-down");
+    }
+});
+
+
+// ---------------------------------------------------------------
+
+
+// Other Sites
+let otherSites = document.getElementById("other-sites");
+
+window.addEventListener("scroll", function () {  
+    if (window.innerWidth <= 768) {
+        if (window.scrollY >= 20){
+            otherSites.classList.add("other-active");
+        } else {
+            otherSites.classList.remove("other-active")
+        }
     }
 });

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://boss.azstatic.com/assets/favicons/favicon-192x192-ef7b1305e801dc655956c2416210c829932ae25ac772dc5c5fb67b36ee0f10e0.png" rel="icon" sizes="192x192">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/homepage.css">
+     <link rel="stylesheet" href="./css/vacanciesfilter.css">
+    <title>Boss.Az - Azərbaycanda İş</title>
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <section class="header-top">
+            <div class="container">
+                <nav class="header-top-nav">
+                    <a href="./homepage.html">baş səhifə</a>
+                    <ul>
+                        <li><a href="#">по-русски</a></li>
+                        <li><a href="#">in english</a></li>
+                    </ul>
+                    <a href="#" style="font-weight: 700;">Saytda reklam</a>
+                </nav>
+
+                <div class="header-select">
+                    <p>boss.az <i class="fa-solid fa-caret-down"></i></p>
+                    <ul>
+                        <li>
+                            <a href="https://bina.az/">bina.az </a>
+                        </li>
+                        <li>
+                            <a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">tap.az</a>
+                        </li>
+                        <li>
+                            <a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">turbo.az</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="header-bottom">
+            <div class="container">
+                <a class="logo" href="./homepage.html">
+                    boss.az 
+                    <div class="lang-buttons">
+                        <button class="lng-btn">
+                            RU
+                        </button>
+                         <button class="lng-btn">
+                            EN
+                        </button>
+                    </div>
+                </a>
+                <div class="hb-nav">
+                    <nav class="nav1">
+                        <ul>
+                            <li><a href="./homepage.html" class="hb-active">İş elanları</a></li>
+                            <li><a href="#">İş axtaranlar</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav2">
+                        <ul>
+                            <li><a href="#">Haqqımızda</a></li>
+                        </ul>
+                        <button>Elan yerləşdirin</button>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="hd-search-menu" id="hd-search-menu">
+            <div class="container">
+                <div class="search-selects">
+                <div class="slcs">
+                    <label for="category">Kategoriya</label>
+                    <select name="category" id="category">
+                        <option value="">Hamısı</option>
+                        <option value="IT">IT</option>
+                        <option value="Design">Design</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Management">Management</option>
+                        <option value="Support">Support</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Law">Law</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="city">Şəhər</label>
+                    <select name="city" id="city">
+                        <option value="">Hamısı</option>
+                        <option value="Baku">Baku</option>
+                        <option value="Ganja">Ganja</option>
+                        <option value="Sumqayit">Sumqayit</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="salary">Əmək Haqqı (minimum)</label>
+                    <select name="salary" id="salary">
+                        <option value="">Hamısı</option>
+                        <option value="1000">1000</option>
+                        <option value="1500">1500</option>
+                        <option value="2000">2000</option>
+                        <option value="2500">2500</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="education">Təhsil</label>
+                        <select name="education" id="education">
+                        <option value="">Hamısı</option>
+                        <option value="Orta">Orta</option>
+                        <option value="Bakalavr">Bakalavr</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="experience">İş Təcrübəsi</label>
+                    <select name="experience" id="experience">
+                        <option value="">Hamısı</option>
+                        <option value="1 il">1 il</option>
+                        <option value="2 il">2 il</option>
+                        <option value="3 il">3 il</option>
+                        <option value="4 il">4 il</option>
+                        <option value="5 il">5 il</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="search">Açar sözləri</label>
+                    <input name="search" type="text" id="search" />
+                </div>
+                <button  id="searchBTN">Axtar</button>
+            </div>
+        </section>
+
+        <section class="header-category-mobile">
+            <div class="container">
+                <div class="cat-mbl-btn" id="cat-mbl-btn">
+                    Bütün kateqoriyalar
+                     <i class="fa-solid fa-caret-down" id="cat-dropdown" itemid="cat-dropdown"></i>
+                </div>
+                <div class="cat-mbl" id="cat-mbl">
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Qarabağda iş imkanları</h3>
+                            <p>Mailiyyə, inzibati heyat, satış və Təhsil</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Marketinq</h3>
+                            <p>Reklam, sosial media və markalaşma</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Maliyyə</h3>
+                            <p>Bank, investisiya və büdcə idarəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>İnformasiya texnologiyaları</h3>
+                            <p>Proqramlaşdırma, IT dəstək və sistem idarəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>İnzibati heyət</h3>
+                            <p>Ofis idarəsi və təşkilati işlər</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Satış</h3>
+                            <p>Məhsul və xidmət satışı, müştəri əlaqəsi</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Dizayn</h3>
+                            <p>Qrafik, UX/UI və vizual kommunikasiya</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Hüquqşünaslıq</h3>
+                            <p>Hüquqi məsləhət və sənəd hazırlığı</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Təhsil və elm</h3>
+                            <p>Müəllimlik, tədqiqat və akademik işlər</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Kənd təsərrüfatı</h3>
+                            <p>Fermerlik, bitkiçilik və heyvandarlıq</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Xidmət Personalı</h3>
+                            <p>Qonaqpərvərlik və müştəri xidməti</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Tibb və əczaçılıq</h3>
+                            <p>Həkim, əczaçı və tibbi dəstək</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="cat-mbl-card">
+                        <div class="cat-text">
+                            <h3>Müxtəlif</h3>
+                            <p>Fərqli sahələr və ixtisaslar</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-sites" id="other-sites">
+            <a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw" class="other1">Turbo.az</a>
+            <a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw" class="other2">Tap.az</a>
+            <a href="https://bina.az/" class="other3">Bina.az </a>
+        </section>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Search Result Section Start -->
+    <section class="src-result">
+        <div class="container">
+            <div class="result-title">
+                <h2 class="rst-h2">AXTARIŞ NƏTİCƏLƏRİ:</h2>
+                <p class="rst-p" id="rst-p"></p>
+            </div>
+            <div class="result-cards-cont">
+            </div>
+        </div>
+    </section>
+    <!-- Search Result Section Start -->
+    
+    <!-- Footer Start -->
+     <footer class="footer">
+        <div class="container">
+            <div class="ftr-card ftr-about">
+                <ul class="mobile-info">
+                    <li><a href="#">Mobil versiyası</a></li>
+                    <li><a href="#" class="ftr-color">Haqqımızda</a></li>
+                    <li><a href="#" class="ftr-color">İstifadəçi razılaşması</a></li>
+                    <li><a href="#" class="ftr-color">Saytda reklam</a></li>
+                    <li>
+                        <i class="fas fa-phone"  style="font-size: 12px; color: #eab120;"></i>
+                        <a href="tel:+0125264411">
+                         (012) 526-44-11
+                        </a>
+                    </li>
+                    <li>
+                         <i class="fas fa-envelope" style="font-size: 12px; color: #eab120;"></i>
+                        <a href="mailto:boss@boss.az">
+                        boss@boss.az
+                        </a>
+                    </li>
+                </ul>
+                <p>Saytın rəhbərliyi reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır</p>
+                <p>© 2008-2025 Digital Classifieds MMC. <br> VÖEN: 1405631661</p>
+            </div>
+            <div class="ftr-card ftr-job">
+                <a href="#" class="ftr-job-title">İş elanları</a>
+                <ul>
+                    <li><a href="#">Qarabağda iş imkanları</a></li>
+                    <li><a href="#">Marketinq</a></li>
+                    <li><a href="#">Maliyyə</a></li>
+                    <li><a href="#">İnformasiya texnologiyaları</a></li>
+                    <li><a href="#">İnzibati heyət</a></li>
+                    <li><a href="#">Satış</a></li>
+                    <li><a href="#">Dizayn</a></li>
+                    <li><a href="#">Hüquqşünaslıq</a></li>
+                    <li><a href="#">Təhsil və elm</a></li>
+                    <li><a href="#">Kənd təsərrüfatı</a></li>
+                    <li><a href="#">Xidmət Personalı</a></li>
+                    <li><a href="#">Tibb və əczaçılıq</a></li>
+                    <li><a href="#">Müxtəlif</a></li>
+                    <li><a href="#">Turizm, otellər, restoranlar</a></li>
+                    <li><a href="#">Nəqliyyat, daşınma və logistika</a></li>
+                    <li><a href="#">İdman zalları, fitness, gözəllik salonları</a></li>
+                    <li><a href="#">Sənaye, tikinti və istehsalat</a></li>
+                </ul>
+            </div>
+             <div class="ftr-card ftr-job">
+                <a href="#" class="ftr-job-title">İş axtaranlar</a>
+                <ul>
+                    <li><a href="#">Qarabağda iş imkanları</a></li>
+                    <li><a href="#">Marketinq</a></li>
+                    <li><a href="#">Maliyyə</a></li>
+                    <li><a href="#">İnformasiya texnologiyaları</a></li>
+                    <li><a href="#">İnzibati heyət</a></li>
+                    <li><a href="#">Satış</a></li>
+                    <li><a href="#">Dizayn</a></li>
+                    <li><a href="#">Hüquqşünaslıq</a></li>
+                    <li><a href="#">Təhsil və elm</a></li>
+                    <li><a href="#">Kənd təsərrüfatı</a></li>
+                    <li><a href="#">Xidmət Personalı</a></li>
+                    <li><a href="#">Tibb və əczaçılıq</a></li>
+                    <li><a href="#">Müxtəlif</a></li>
+                    <li><a href="#">Turizm, otellər, restoranlar</a></li>
+                    <li><a href="#">Nəqliyyat, daşınma və logistika</a></li>
+                    <li><a href="#">İdman zalları, fitness, gözəllik salonları</a></li>
+                    <li><a href="#">Sənaye, tikinti və istehsalat</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- JS Connections -->
+    <script src="./js/header.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+</html>

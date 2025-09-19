@@ -32,12 +32,10 @@
                             <a href="https://bina.az/">bina.az </a>
                         </li>
                         <li>
-                            <a
-                                href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">tap.az</a>
+                            <a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">tap.az</a>
                         </li>
                         <li>
-                            <a
-                                href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">turbo.az</a>
+                            <a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw">turbo.az</a>
                         </li>
                     </ul>
                 </div>
@@ -107,52 +105,63 @@
         <section class="hd-search-menu" id="hd-search-menu">
             <div class="container">
                 <div class="search-selects">
-                    <div class="slcs">
-                        <label for="category">Kategoriya</label>
-                        <select name="category" id="category">
-                            <option value="1">abc</option>
-                            <option value="2">abcwec</option>
-                            <option value="3">abweec</option>
-                        </select>
-                    </div>
-                    <div class="slcs">
-                        <label for="city">Şəhər</label>
-                        <select name="city" id="city">
-                            <option value="1">abc</option>
-                            <option value="2">abcwec</option>
-                            <option value="3">abweec</option>
-                        </select>
-                    </div>
-                    <div class="slcs">
-                        <label for="salary">Əmək Haqqı</label>
-                        <select name="salary" id="salary">
-                            <option value="1">abc</option>
-                            <option value="2">abcwec</option>
-                            <option value="3">abweec</option>
-                        </select>
-                    </div>
-                    <div class="slcs">
-                        <label for="education">Təhsil</label>
-                        <select name="education" id="education">
-                            <option value="1">abc</option>
-                            <option value="2">abcwec</option>
-                            <option value="3">abweec</option>
-                        </select>
-                    </div>
-                    <div class="slcs">
-                        <label for="experience">İş Təcrübəsi</label>
-                        <select name="experience" id="experience">
-                            <option value="1">abc</option>
-                            <option value="2">abcwec</option>
-                            <option value="3">abweec</option>
-                        </select>
-                    </div>
-                    <div class="slcs">
-                        <label for="search">Açar sözləri</label>
-                        <input name="search" type="text" id="search" />
-                    </div>
+                <div class="slcs">
+                    <label for="category">Kategoriya</label>
+                    <select name="category" id="category">
+                        <option value="">Hamısı</option>
+                        <option value="IT">IT</option>
+                        <option value="Design">Design</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Management">Management</option>
+                        <option value="Support">Support</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Law">Law</option>
+                    </select>
                 </div>
-                <button>Axtar</button>
+                <div class="slcs">
+                    <label for="city">Şəhər</label>
+                    <select name="city" id="city">
+                        <option value="">Hamısı</option>
+                        <option value="Baku">Baku</option>
+                        <option value="Ganja">Ganja</option>
+                        <option value="Sumqayit">Sumqayit</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="salary">Əmək Haqqı (minimum)</label>
+                    <select name="salary" id="salary">
+                        <option value="">Hamısı</option>
+                        <option value="1000">1000</option>
+                        <option value="1500">1500</option>
+                        <option value="2000">2000</option>
+                        <option value="2500">2500</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="education">Təhsil</label>
+                        <select name="education" id="education">
+                        <option value="">Hamısı</option>
+                        <option value="Orta">Orta</option>
+                        <option value="Bakalavr">Bakalavr</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="experience">İş Təcrübəsi</label>
+                    <select name="experience" id="experience">
+                        <option value="">Hamısı</option>
+                        <option value="1 il">1 il</option>
+                        <option value="2 il">2 il</option>
+                        <option value="3 il">3 il</option>
+                        <option value="4 il">4 il</option>
+                        <option value="5 il">5 il</option>
+                    </select>
+                </div>
+                <div class="slcs">
+                    <label for="search">Açar sözləri</label>
+                    <input name="search" type="text" id="search" />
+                </div>
+                <button  id="searchBTN">Axtar</button>
             </div>
         </section>
 
@@ -257,11 +266,17 @@
                 </div>
             </div>
         </section>
+
+        <section class="other-sites" id="other-sites">
+            <a href="https://turbo.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw" class="other1">Turbo.az</a>
+            <a href="https://tap.az/#_gl=1*10himof*_ga*NTUxNTQ5MDEyLjE3NTc5MjQ3NDQ.*_ga_68B6PJZXYD*czE3NTc5MjQ3NDQkbzEkZzEkdDE3NTc5MjU4NzAkajUzJGwwJGgw" class="other2">Tap.az</a>
+            <a href="https://bina.az/" class="other3">Bina.az </a>
+        </section>
     </header>
     <!-- Header Section End -->
 
     <!-- Resent Job Section Start -->
-     <section class="jobs">
+     <section class="jobs" id="resent-jobs">
         <div class="container">
             <div class="jobs-title">
                 <div class="jobs-title-left">
@@ -274,59 +289,15 @@
                 </div>
             </div>
 
-            <div class="jobs-cards-cont">
-                <div class="job-card">
-                    <a href="#" class="job-position">Bölgə rəhbəri (Pediatriya üzrə)</a>
-                    <span class="job-salary">1000 - 1200 AZN</span>
-                    <a href="#" class="job-company">Healpro</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Xəzinədarlıq üzrə kiçik administrator (Yerli ödənişlər)</a>
-                    <p class="job-salary">—</p>
-                    <a href="#" class="job-company">Sinteks MMC</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Mühasib köməkçisi</a>
-                    <p class="job-salary">700 AZN</p>
-                    <a href="#" class="job-company">Muxtaroglu-VM MMC</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış məsləhətçisi</a>
-                    <p class="job-salary">500 - 700 AZN</p>
-                    <a href="#" class="job-company">Evimiz</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Aşpaz</a>
-                    <p class="job-salary">500 AZN</p>
-                    <a href="#" class="job-company">Muxtaroglu-VM MMC</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış meneceri</a>
-                    <p class="job-salary">600 - 1500 AZN</p>
-                    <a href="#" class="job-company">İnterkommers MMC</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Ofis meneceri</a>
-                    <p class="job-salary">700 AZN</p>
-                    <a href="#" class="job-company">İnterkommers MMC</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Məhsul üzrə menecer</a>
-                    <p class="job-salary">1800 - 2500 AZN</p>
-                    <a href="#" class="job-company">SETONDA AZƏRBAYCAN NÜMAYƏNDƏLİYİ</a>
-                </div>
-                <div class="job-card">
-                    <a href="#" class="job-position">Mühasib</a>
-                    <p class="job-salary">700 - 800 AZN</p>
-                    <a href="#" class="job-company">Radius MMC</a>
-                </div>
+            <div class="jobs-cards-cont" id="jobs-cards-resent">
+
             </div>
         </div>
      </section>
     <!-- Resent Job Section End -->
 
     <!-- Premium Job Section Start -->
-     <section class="jobs">
+     <section class="jobs" id="premium-jobs">
         <div class="container">
             <div class="jobs-title">
                 <div class="jobs-title-left">
@@ -334,186 +305,8 @@
                 </div>
             </div>
 
-            <div class="jobs-cards-cont">
-                <div class="job-card">
-                    <a href="#" class="job-position">Aşpaz</a>
-                    <span class="job-salary">500 AZN</span>
-                    <a href="#" class="job-company">Muxtaroglu-VM MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Daşınmaz əmlak agenti /Makler/ Vasitəçi</a>
-                    <span class="job-salary">2000 - 3500 AZN</span>
-                    <a href="#" class="job-company">Khazar Real Estate Agency</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Mühasib</a>
-                    <span class="job-salary">1200 AZN</span>
-                    <a href="#" class="job-company">HAKAN FOODS TRADİNG MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Педагог дошкольной подготовки</a>
-                    <span class="job-salary">600 - 800 AZN</span>
-                    <a href="#" class="job-company">"Creative TK" Education Complex</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Nəzarətçi-kassir</a>
-                    <span class="job-salary">500 - 600 AZN</span>
-                    <a href="#" class="job-company">Prime Cyber Club</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Satıcı</a>
-                    <span class="job-salary">400 - 500 AZN</span>
-                    <a href="#" class="job-company">Atlant Market</a>
-                </div>  
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Əlaqələr üzrə mütəxəssis</a>
-                    <span class="job-salary">700 AZN</span>
-                    <a href="#" class="job-company">"Europark" MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış təmsilçisi</a>
-                    <span class="job-salary">800 - 1100 AZN</span>
-                    <a href="#" class="job-company">Novator HRC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Qeydiyyatçı</a>
-                    <span class="job-salary">600 - 1500 AZN</span>
-                    <a href="#" class="job-company">New House əmlak şirkəti</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Baş mühasib</a>
-                    <span class="job-salary">2500 - 3700 AZN</span>
-                    <a href="#" class="job-company">Mikro Kredit</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Aparıcı mühasib</a>
-                    <span class="job-salary">1500 - 2000 AZN</span>
-                    <a href="#" class="job-company">REGENCY Consulting & Tax Solutions MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">İnsan Resursları üzrə mütəxəssis</a>
-                    <span class="job-salary">700 - 800 AZN</span>
-                    <a href="#" class="job-company">REGENCY Consulting & Tax Solutions MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Rieltor</a>
-                    <span class="job-salary">800 - 1200 AZN</span>
-                    <a href="#" class="job-company">MyDom Daşınmaz Əmlak Agentliyi</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Tibbi nümayəndə</a>
-                    <span class="job-salary">500 - 1000 AZN</span>
-                    <a href="#" class="job-company">Eva Farm</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Operator</a>
-                    <span class="job-salary">400 - 500 AZN</span>
-                    <a href="#" class="job-company">İconic Sığorta Agentliyi</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış agenti</a>
-                    <span class="job-salary">800 - 1500 AZN</span>
-                    <a href="#" class="job-company">İnvest Home</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Operator</a>
-                    <span class="job-salary">400 - 800 AZN</span>
-                    <a href="#" class="job-company">Ven Group MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış təmsilçisi</a>
-                    <span class="job-salary">800 AZN</span>
-                    <a href="#" class="job-company">One Pack MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Kiçik tibb işçisi (porter)</a>
-                    <span class="job-salary">400 - 500 AZN</span>
-                    <a href="#" class="job-company">Baku Medical Plaza</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Tibb bacısı</a>
-                    <span class="job-salary">400 - 500 AZN</span>
-                    <a href="#" class="job-company">Baku Medical Plaza</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Tikinti nəzarəti üzrə smeta mütəxəssisi</a>
-                    <span class="job-salary">1400 - 1500 AZN</span>
-                    <a href="#" class="job-company">Luxstroy</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Reklam meneceri</a>
-                    <span class="job-salary">900 - 3500 AZN</span>
-                    <a href="#" class="job-company">New House əmlak şirkəti</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Медсестра в косметологии</a>
-                    <span class="job-salary">700 - 800 AZN</span>
-                    <a href="#" class="job-company">Empire by Asthetik Lab</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Təchizatçı</a>
-                    <span class="job-salary">800 - 1300 AZN</span>
-                    <a href="#" class="job-company">AN Production</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Менеджер по работе с клиентами</a>
-                    <span class="job-salary">700 - 1000 AZN</span>
-                    <a href="#" class="job-company">Empire by Asthetik Lab</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Врач-эстетист</a>
-                    <span class="job-salary">1000 - 1200 AZN</span>
-                    <a href="#" class="job-company">Empire by Asthetik Lab</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Çin bazarının araşdırması üzrə mütəxəssis</a>
-                    <span class="job-salary">1000 - 1500 AZN</span>
-                    <a href="#" class="job-company">Cəsarətoğlu MMC</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Ərazi üzrə satış mütəxəssisi</a>
-                    <span class="job-salary">1200 - 1800 AZN</span>
-                    <a href="#" class="job-company">EVA group</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Менеджер по продажам (B2B, IT Security, Telephony, UC)</a>
-                    <span class="job-salary">—</span>
-                    <a href="#" class="job-company">TAKOPI AZERBAIJAN</a>
-                </div>
-
-                <div class="job-card">
-                    <a href="#" class="job-position">Satış üzrə menecer</a>
-                    <span class="job-salary">800 - 2500 AZN</span>
-                    <a href="#" class="job-company">New House əmlak şirkəti</a>
-                </div>
+            <div class="jobs-cards-cont" id="job-cards-premium">
+                
             </div>
         </div>
      </section>
@@ -831,5 +624,8 @@
     <!-- JS Connections -->
     <script src="./js/header.js"></script>
     <script src="./js/homepageTab.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/latestVacancies.js"></script>
+    <script src="./js/premiumVacancies.js"></script>
 </body>
 </html>
